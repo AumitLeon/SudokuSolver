@@ -8,6 +8,7 @@ class SudokuBoard
         /** Default destructor */
         virtual ~SudokuBoard();
         void displayBoard();
+        void fillRandomly();
 
     private:
         static const int height = 9;
