@@ -2,6 +2,7 @@
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
+#include <string>
 using namespace std;
 
 SudokuBoard::SudokuBoard()
@@ -22,7 +23,7 @@ SudokuBoard::~SudokuBoard()
 
 void SudokuBoard::displayBoard()
 {
-    fillRandomly();
+    //fillRandomly();
     cout << "----------------------------------------------" << endl;
     for (int f = 0; f < 9; f++)
     {
@@ -55,3 +56,19 @@ void SudokuBoard::fillRandomly()
         }
     }
 }
+
+ bool SudokuBoard::input(int pos, int pos_, char num)
+ {
+     sudoku_board[pos][pos_] = num;
+     return true;
+ }
+
+ int SudokuBoard::getWidth()
+ {
+     return width;
+ }
+
+ int SudokuBoard::getHeight()
+ {
+     return height;
+ }
