@@ -9,11 +9,14 @@ class SudokuBoard
         virtual ~SudokuBoard();
         void displayBoard();
         void fillRandomly();
+        bool input(int pos, int pos_, char num);
+        int getHeight();
+        int getWidth();
 
     private:
         static const int height = 9;
         static const int width = 9;
-        int sudoku_board[height][width];
+        char sudoku_board[height][width];
 };
 
 #endif // SUDOKUBOARD_H
