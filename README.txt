@@ -12,3 +12,5 @@ Ex: 006040800
 To do 7/8--
 	- Develop the solving algorithm. 
 	- Write out how long it took to solve. 
+
+--Documentated code, comments will reflect changes. 
